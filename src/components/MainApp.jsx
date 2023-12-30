@@ -1,12 +1,14 @@
-import logo from "../logo.svg";
+import "../App.css";
 import { About } from "./About";
+import { Home } from "./Home";
+import { Navbar } from "./Navbar";
 
 export const MainApp = () => {
   return (
-    <div className='container bg-dark fit text-light p-5 d-flex flex-column justify-content-between'>
-      <About />
-      <div className='d-flex justify-content-center'>
-        <button className='btn btn-primary'>Calculate BMI</button>
+    <div className='bg-dark'>
+      <Navbar />
+      <div className='container text-light p-5 d-flex flex-column justify-content-between'>
+        <Home />
       </div>
     </div>
   );
