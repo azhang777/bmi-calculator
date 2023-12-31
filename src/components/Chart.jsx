@@ -3,40 +3,64 @@ export const Chart = () => {
     <table className='table table-bordered'>
       <thead>
         <tr>
-          <th scope='col'>Measurement Units</th>
-          <th scope='col'>Formula and Calculation</th>
+          <th scope='col'>BMI Measurement</th>
+          <th scope='col'>Weight Status</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope='row'>Kilagrams and meters</th>
+          <th scope='row'>Below 18.5</th>
           <td>
             <p>
-              Formula: weight (kg) / [height (m)]<sup>2</sup>
+              <strong>Underweight</strong>
               <br /> <br />
-              With the metric system, the formula for BMI is weight in kilograms
-              divided by height in meters squared. Because height is commonly
-              measured in centimeters, divide height in centimeters by 100 to
-              obtain height in meters.
-              <br /> <br />
-              Example: Weight = 68 kg, Height = 165 cm (1.65 m)
-              <br />
-              Calculation: 68 ÷ (1.65)<sup>2</sup> = 24.98
+              Your BMI indicates underweight status. Discuss with your
+              healthcare provider as BMI may relate to your overall health and
+              well-being. Your healthcare provider might determine possible
+              reasons for underweight and recommend support or treatment.
             </p>
           </td>
         </tr>
         <tr>
-          <th scope='row'>Pounds and inches</th>
+          <th scope='row'>18.5 - 24.9</th>
           <td>
             <p>
-              Formula: weight (lb) / [height (in)]<sup>2</sup> x 703
+              <strong>Healthy Weight</strong>
               <br /> <br />
-              Calculate BMI by dividing weight in pounds (lbs) by height in
-              inches (in) squared and multiplying by a conversion factor of 703.
+              Your BMI indicates healthy weight status. Maintaining a weight in
+              the healthy BMI range is one way to support overall health as you
+              age.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <th scope='row'>25.0 - 29.9</th>
+          <td>
+            <p>
+              <strong>Overweight</strong>
               <br /> <br />
-              Example: Weight = 150 lbs, Height = 5’5″ (65″)
-              <br />
-              Calculation: [150 ÷ (65)<sup>2</sup>] x 703 = 24.96
+              Your BMI indicates overweight status. Discuss your BMI category
+              with your healthcare provider as BMI may relate to your overall
+              health and well-being. Your healthcare provider might determine
+              possible reasons for overweight and recommend support or
+              treatment. Having excess weight can increase risk for chronic
+              conditions, such as high blood pressure, type 2 diabetes, and high
+              cholesterol.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <th scope='row'>30.0 and Above</th>
+          <td>
+            <p>
+              <strong>Obesity</strong>
+              <br /> <br />
+              Your BMI indicates obesity status. Discuss with your healthcare
+              provider as BMI may relate to your overall health and well-being.
+              Your healthcare provider might determine possible reasons for
+              overweight and recommend support or treatment. Having excess
+              weight can increase risk for chronic conditions, such as high
+              blood pressure, type 2 diabetes, and high cholesterol.
             </p>
           </td>
         </tr>
