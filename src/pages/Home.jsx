@@ -1,4 +1,5 @@
-import { CustomCard } from "./CustomCard";
+import { Link } from "react-router-dom";
+import { CustomCard } from "../components/CustomCard";
 
 export const Home = () => {
   return (
@@ -28,12 +29,12 @@ export const Home = () => {
         </div>
       </div>
       <div className='row py-5 justify-content-center'>
-        <button
+        <Link
+          to={"/calculator"}
           className='btn btn-light col-auto fs-2 rounded-pill px-5'
-          onClick={() => console.log("Button clicked")}
         >
           Get started
-        </button>
+        </Link>
       </div>
     </div>
   );

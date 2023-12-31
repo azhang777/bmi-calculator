@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Navbar = () => {
   return (
     <nav
@@ -5,40 +7,43 @@ export const Navbar = () => {
       data-bs-theme='dark'
     >
       <div className='container-fluid '>
-        <a
+        <Link
+          to={"/"}
           className='navbar-brand'
           href='/'
         >
           BMI Calculator
-        </a>
+        </Link>
         <ul className='navbar-nav flex-row'>
           <li className='nav-item mx-2'>
-            <a
-              className='nav-link active'
-              aria-current='page'
-              href='/about'
+            <Link
+              to={"/about"}
+              className='nav-link '
             >
               About
-            </a>
+            </Link>
           </li>
           <li className='nav-item mx-2'>
-            <a
+            <Link
+              to={"/calculator"}
               className='nav-link'
-              href='/calculator'
             >
               Calculator
-            </a>
+            </Link>
           </li>
           <li className='nav-item mx-2'>
-            <a
+            <Link
+              to={"/chart"}
               className='nav-link'
-              href='/chart'
             >
               Chart
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
     </nav>
   );
 };
+
+//Link to is the better alternative to a href for creating navigation links. It is because it maintains the SPA behavior by allowing navigation without full reloads. notice the difference if u change it back to ahref
+//Use ahref to reach links outside of the SPA like linkedin or github

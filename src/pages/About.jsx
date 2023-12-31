@@ -1,6 +1,6 @@
 //consider breaking each h2 + p pair as its own component info
-import { TextBody } from "./TextBody";
-import { CalculationTable } from "./CalculationTable";
+import { TextBody } from "../components/TextBody";
+import { CalculationTable } from "../components/CalculationTable";
 export const About = () => {
   return (
     <>
