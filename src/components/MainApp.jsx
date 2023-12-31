@@ -5,9 +5,9 @@ import { Navbar } from "./Navbar";
 
 export const MainApp = () => {
   return (
-    <div className='bg-dark'>
+    <div className='bg-dark min-vh-100'>
       <Navbar />
-      <div className='container text-light p-5 d-flex flex-column justify-content-between'>
+      <div className='main container text-light p-5 d-flex flex-column justify-content-between'>
         <Home />
       </div>
     </div>

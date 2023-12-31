@@ -1,17 +1,18 @@
 export const CustomCard = ({ img, text }) => {
   return (
     <div
-      class='card border-warning border-0 border-3 border-bottom d-flex justify-content-center align-items-center'
+      className='card bg-transparent text-light border-0 d-flex justify-content-center align-items-center'
       style={{ width: "12rem" }}
     >
       <img
         src={img}
         alt='icon'
-        width={100}
-        height={100}
+        width={150}
+        height={150}
+        className='icon'
       />
-      <div class='card-body'>
-        <p class='card-text fw-bold'>{text}</p>
+      <div className='card-body'>
+        <p className='card-text fw-bold fs-3 py-5'>{text}</p>
       </div>
     </div>
   );

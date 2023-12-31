@@ -5,4 +5,18 @@
 
 .custom-font-size {
   font-size: 10vw;
+  max-width: 1220px;
+  max-height: 220px;
+  text-overflow: ellipsis;
+  white-space: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .custom-font-size {
+    font-size: 150px;
+  }
+}
+
+.icon {
+  filter: invert(100%);
 }
