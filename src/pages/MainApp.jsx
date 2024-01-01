@@ -2,9 +2,9 @@ import "../App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { About } from "./About";
 import { Home } from "./Home";
-import { Calculator } from "./Calculator";
 import { Navbar } from "../components/Navbar";
 import { ChartPage } from "./ChartPage";
+import { CalculationPage } from "./CalculationPage";
 export const MainApp = () => {
   return (
     <Router>
@@ -22,7 +22,7 @@ export const MainApp = () => {
             />
             <Route
               path='/calculator'
-              Component={Calculator}
+              Component={CalculationPage}
             />
             <Route
               path='/chart'
